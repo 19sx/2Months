@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>For the most beautiful Girl on this whole WORLD</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE OF LOVE WHICH WILL LAST FOREVER</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hey my absolute stunning BEAUTY !<br />
+			Do you remember the day we had our First Date?<br />
+			<span class="comments">// 17.10.2024 </span><br />
+			Since that day im (technically) married to a beauty called Leona;<br />
+			<span class="comments">// Your face Your Voice Your Words.</span><br />
+			Your everything got imprinted in my heart;<br />
+			Every Single Text with you feels like an acomplishment;<br />
+			The Bond is growing stronger and stronger daily;<br />
+			<span class="comments">// Even if we have some differences (rarely) .</span><br />
+			Journey from Eye contact to Love;<br />
+			We have already traveled a long way together;<br />
+			This was till this day my most beautiful Journey ;<br />
+			<span class="comments">// And I'm sure this Journey will even go on.</span><br />
+			And im not letting go until I see us both in a rocking Chair holding hands and waiting to get visited by our nieces and nephews;<br />
+			<br>
+		
+			<br>
+			All I want to say is:<br />
+			Baby, I will love you forever, pinky promise;<br />
+			<br>
+			<br>
+			Now If you want to hug me you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					NA ZAWSZE ~ PËRGJITHMONË ❤️
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- RITVIK</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2024, 09, 17);
+together.setHours(18);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
